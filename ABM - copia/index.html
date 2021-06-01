@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" type="module"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Anuncios</title>
+</head>
+<header>
+    <img src="./assets/auto.png" alt="logo_auto">
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+            <li>
+                <a href="#">Anuncios</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Administración</h1>
+
+    <div id="banner">
+        <img src="./assets/banner.jpg" alt="" id='autoBanner'>
+    </div>
+
+    <div class="container">
+        <div id ="divForm" >
+            <form>
+                <input type="hidden" name ="id">
+                <label for="titulo">Titulo</label><br>
+                <input type="text" name = 'titulo' placeholder ='ingrese titulo'required><br><br>
+                <fieldset>
+                    <legend>Transaccion</legend>
+                    <input type="radio" name="transaccion" value="venta" checked> Venta
+                    <input type="radio" name="transaccion" value="alquiler" > Alquiler
+                </fieldset>
+                <br><br>
+                <label for="descripcion">Descripcion</label><br>
+                <input type="text" name = 'descripcion' placeholder ='Descripción' required><br><br>
+                <label for="precio">Precio</label><br>
+                <input type="number" name = 'precio' placeholder ='Precio' required><br><br>
+                <label for="puertas">Puertas</label> <br>
+                <input type="number" name = 'puertas' placeholder ='Puertas'required> <br><br>
+                <label for="kilometros">Kilómetros</label> <br>
+                <input type="number" name = 'kilometros' placeholder ='Kilómetros' required> <br><br>
+                <label for="potencia">Potencia</label> <br>
+                <input type="number" name = 'potencia' placeholder ='Potencia' required> <br><br>
+                <input type="submit" name="" id="btnSubmit" value ="Alta" img='./assets/guardar.png'><br><br>
+                <input type="button" id="btnEliminar" value = " Eliminar " class="oculto">
+            </form><br><br>
+        </div>
+    <div id="spinner-container"></div>    
+    <div id="divLista"></div>
+        
+    </div>
+</body>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Nosotros</a>
+            </li>
+            <li>
+                <a href="#">Anuncios</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <p>Todos los derechos reservados 2019</p>
+
+</footer>
+</html>
